@@ -6,10 +6,10 @@ from sklearn import linear_model
 from sklearn.svm import SVC  
 
 #for Gait dataset
-#dfread= pd.read_csv('GaitDataset.csv')
-#df = pd.DataFrame(dfread)
-#X = df.drop(['Column1', 'Time(sec)Min', 'VGRF_left_s1Min', 'VGRF_left_s2Min', 'VGRF_left_s3Min', 'VGRF_left_s4Min', 'VGRF_left_s5Min', 'VGRF_left_s6Min', 'VGRF_left_s7Min', 'VGRF_left_s8Min', 'VGRF_right_s1Min', 'VGRF_right_s2Min', 'VGRF_right_s3Min', 'VGRF_right_s4Min', 'VGRF_right_s5Min', 'VGRF_right_s6Min', 'VGRF_left_s7Min', 'VGRF_right_s8Min','Total_force_leftMin', 'Status'], axis = 'columns')
-#Y = df.Status
+dfread= pd.read_csv('GaitDataset.csv')
+df = pd.DataFrame(dfread)
+X = df.drop(['Column1', 'Time(sec)Min', 'VGRF_left_s1Min', 'VGRF_left_s2Min', 'VGRF_left_s3Min', 'VGRF_left_s4Min', 'VGRF_left_s5Min', 'VGRF_left_s6Min', 'VGRF_left_s7Min', 'VGRF_left_s8Min', 'VGRF_right_s1Min', 'VGRF_right_s2Min', 'VGRF_right_s3Min', 'VGRF_right_s4Min', 'VGRF_right_s5Min', 'VGRF_right_s6Min', 'VGRF_left_s7Min', 'VGRF_right_s8Min','Total_force_leftMin', 'Status'], axis = 'columns')
+Y = df.Status
 
 #Voice dataset
 dfread= pd.read_csv('UCI_Dataset_on_Voice.csv')
@@ -34,9 +34,9 @@ plt.plot(c_value, accuracy)
 print("Accuracy: ", acc_sum/100)
 
 #Gait prediction
-#dfpredict = pd.read_csv('Testing_values_gait.csv')
-#dfprediction = pd.DataFrame(dfpredict)
-#dfprediction = dfprediction.drop(['Column1', 'Time(sec)Min', 'VGRF_left_s1Min', 'VGRF_left_s2Min', 'VGRF_left_s3Min', 'VGRF_left_s4Min', 'VGRF_left_s5Min', 'VGRF_left_s6Min', 'VGRF_left_s7Min', 'VGRF_left_s8Min', 'VGRF_right_s1Min', 'VGRF_right_s2Min', 'VGRF_right_s3Min', 'VGRF_right_s4Min', 'VGRF_right_s5Min', 'VGRF_right_s6Min', 'VGRF_left_s7Min', 'VGRF_right_s8Min','Total_force_leftMin'], axis = 'columns')
+dfpredict = pd.read_csv('Testing_values_gait.csv')
+dfprediction = pd.DataFrame(dfpredict)
+dfprediction = dfprediction.drop(['Column1', 'Time(sec)Min', 'VGRF_left_s1Min', 'VGRF_left_s2Min', 'VGRF_left_s3Min', 'VGRF_left_s4Min', 'VGRF_left_s5Min', 'VGRF_left_s6Min', 'VGRF_left_s7Min', 'VGRF_left_s8Min', 'VGRF_right_s1Min', 'VGRF_right_s2Min', 'VGRF_right_s3Min', 'VGRF_right_s4Min', 'VGRF_right_s5Min', 'VGRF_right_s6Min', 'VGRF_left_s7Min', 'VGRF_right_s8Min','Total_force_leftMin'], axis = 'columns')
 
 
 #Voice prediction
