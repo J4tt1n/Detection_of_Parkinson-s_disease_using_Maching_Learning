@@ -13,4 +13,3 @@ This prepared data is then given to the trained models for testing the Parkinson
 
 The recorded accuracy for SVM has been 90%, for Random Forests has been 87% and for KNN has been 83%.
 
-![image](https://github.com/J4tt1n/Detection_of_Parkinson-s_disease_using_Maching_Learning/assets/90543867/02cfc7ca-22dc-4c08-9784-9912cc1d2b49)
