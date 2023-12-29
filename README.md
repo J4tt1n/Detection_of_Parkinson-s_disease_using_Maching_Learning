@@ -11,5 +11,5 @@ After recording the values, we build our data by calculating the minimum, maximu
 
 This prepared data is then given to the trained models for testing the Parkinson's disease in the subjects.
 
-The recorded accuracy for SVM has been 90%, for Random Forests has been 87% and for KNN has been 83%.
+The recorded accuracy for SVM has been 90%, for Random Forests has been 87%, from XGBoost has been 86% and for KNN has been 83%.
 
